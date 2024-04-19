@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "incReg";
+  src: url(./fonts/Inconsolata-Regular.ttf);
+}
+
+@font-face {
+  font-family: "orator";
+  src: url(./fonts/Orator-Std-Font.otf);
+}
+
+body {
+  margin: 10px 14%;
+  padding: 0;
+  background-color: rgb(15, 1, 168);
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: "incReg", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "orator";
+  color: yellow;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+    padding-right: 60px;
+}
+
+a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgb(235, 113, 215);
+}
+
+a:hover {
+  color: rgb(249, 236, 91);
+}
+
+ol,
+ul {
+  color: chartreuse;
+}
+#robot {
+  border: solid 10px rgb(7, 226, 10);
+  border-radius: 50%;
+  width: 200px;
+}
+
+.stars {
+  width: 100px;
+  padding: 30px;
+}
+
+/* positioning task */
+#positioningStar {
+  background-color: aqua;
+  border: solid 4px rgb(7, 226, 10);
+  padding: 0 0 50px 50px;
+}
