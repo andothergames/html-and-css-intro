@@ -15,6 +15,7 @@ body {
   color: whitesmoke;
   font-size: 16px;
   font-family: "incReg", monospace;
+  padding-top: 50px;
 }
 
 h1,
@@ -29,10 +30,6 @@ h6 {
 
 nav {
   text-align: center;
-}
-
-nav a {
-    padding-right: 60px;
 }
 
 a {
@@ -52,7 +49,15 @@ ul {
 #robot {
   border: solid 10px rgb(7, 226, 10);
   border-radius: 50%;
+  display: block;
+  margin: 20px auto;
   width: 200px;
+}
+
+ul li {
+  list-style-type: "✴";
+  margin-left: -12px;
+  padding-left: 10px;
 }
 
 .stars {
@@ -62,7 +67,38 @@ ul {
 
 /* positioning task */
 #positioningStar {
-  background-color: aqua;
   border: solid 4px rgb(7, 226, 10);
   padding: 0 0 50px 50px;
+}
+
+/* grid task */
+
+#container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 300px auto;
+}
+
+#gallery {
+display: grid;
+grid-template-columns: auto auto auto auto;
+}
+
+/* MOBILE DESIGN CSS */
+
+@media only screen and (max-width: 800px) {
+    body {
+        margin: 10px 20px;
+}
+
+#container {
+    display: grid;
+    gap: 8px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        margin: 10px 20px;
+}
 }
